@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel = "icon" href ="data:image/png;base64,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"  type = "image/x-icon">
+    <link rel="stylesheet" href="index.css" type="text/css">
+  </head>
+ <body>
+    <header class="bg-dark" style="position: fixed;width: 100%;z-index: 1;">
+     <div class="row">
+        <div class="col-md-6 col-9 p-3 pl-5">
+            <h2 class="text-white">Manaf Malekkal</h2>
+        </div>
+        <div class="col-md-6 col-3">
+         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+             <div class="collapse navbar-collapse pr-5 pt-2" id="navbarNavAltMarkup">
+               <div class="navbar-nav ml-auto">
+                  <a class="nav-item nav-link active" href="#home-section">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-item nav-link" href="#skill-section">Skills</a>
+                  <a class="nav-item nav-link" href="#education-section">Education</a>
+                  <a class="nav-item nav-link" href="#contact-section">Contact</a>
+               </div>
+             </div>
+           </nav>
+        </div>
+     </div>
+    </header>
+    <section id="home-section" style="padding-top: 7em;">
+      <div class="row"> 
+       <div class="col-md-6 text-center pt-5">
+          <h3 class="heading">--FULL STACK DEVELOPER--</h3>
+          <p>A self taught Web Developer and an Engineering graduate from Thalassery, India</p>
+       </div>  
+       <div class="col-md-6">
+          <img class="image" src="image.JPG">
+       </div>
+      </div> 
+    </section>
+    <section id="skill-section" class="bg-dark">
+       <div class="container pb-2">
+          <h1 class="heading text-center text-white pt-3 pb-3">My Skills</h1>
+          <div class="row mb-2">
+            <div class="col-md-4">
+               <div class="card m-auto text-center" style="width: 18rem;">
+                  <i class="fab fa-html5 display-1"></i>
+                  <div class="card-body">
+                    <h5 class="card-title">HTML5</h5>
+                    <a href="https://en.wikipedia.org/wiki/HTML5" class="btn btn-secondary">Know More</a>
+                  </div>
+                </div>   
+            </div>
+            <div class="col-md-4">
+               <div class="card m-auto text-center" style="width: 18rem;">
+                  <i class="fab fa-css3 display-1"></i>
+                  <div class="card-body">
+                    <h5 class="card-title">CSS</h5>
+                    <a href="https://en.wikipedia.org/wiki/CSS" class="btn btn-secondary">Know More</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+               <div class="card m-auto text-center" style="width: 18rem;">
+                  <i class="fab fa-js display-1"></i>
+                  <div class="card-body">
+                    <h5 class="card-title">JavaScript</h5>
+                    <a href="https://en.wikipedia.org/wiki/JavaScript" class="btn btn-secondary">Know More</a>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="row mb-2">
+            <div class="col-md-4">
+               <div class="card mb-2 m-auto text-center" style="width: 18rem;">
+                  <i class="fab fa-node-js display-1"></i>
+                  <div class="card-body">
+                    <h5 class="card-title">nodeJS</h5>
+                    <a href="https://en.wikipedia.org/wiki/Node.js" class="btn btn-secondary">Know More</a>
+                  </div>
+                </div>   
+            </div>
+            <div class="col-md-4">
+               <div class="card mb-2 m-auto text-center" style="width: 18rem;">
+                  <i class="fab fa-react display-1"></i>
+                  <div class="card-body">
+                    <h5 class="card-title">reactJS</h5>
+                    <a href="https://en.wikipedia.org/wiki/React_(JavaScript_library)" class="btn btn-secondary">Know More</a>
+                  </div>
+                </div>   
+            </div>
+            <div class="col-md-4">
+               <div class="card mb-2 m-auto text-center" style="width: 18rem;">
+                  <i class="fas fa-database display-1"></i>
+                  <div class="card-body">
+                    <h5 class="card-title">mongoDB</h5>
+                    <a href="https://en.wikipedia.org/wiki/MongoDB" class="btn btn-secondary">Know More</a>
+                  </div>
+                </div>   
+            </div>
+          </div>
+       </div>
+    </section>
+    <section id="education-section" class="bg-secondary">
+       <div class="container pb-2">
+          <h1 class="heading text-center pt-3 pb-3">My Education</h1>
+          <div class="row">
+            <div class="col-md-4">
+               <div class="card m-auto text-center" style="width: 18rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">MEA Engineering College</h5>
+                    <p class="card-text">Bachelor of Technology<br>Electronics & Communication Engineering</p>
+                    <a href="https://www.meaec.edu.in/" class="btn btn-secondary">Know More</a>
+                  </div>
+                </div>   
+            </div>
+            <div class="col-md-4">
+               <div class="card m-auto text-center" style="width: 18rem;height: 12.7rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Kadambur English School</h5>
+                    <p class="card-text">Higher Secondary<br>Computer Science</p>
+                    <a href="https://ems.kadamburschool.com/" class="btn btn-secondary mt-4">Know More</a>
+                  </div>
+                </div>   
+            </div>
+            <div class="col-md-4">
+               <div class="card  m-auto text-center" style="width: 18rem;height: 12.7rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Progressive English School</h5>
+                    <p class="card-text">High School</p>
+                    <a href="https://www.progressive.edu.in/" class="btn btn-secondary mt-5">Know More</a>
+                  </div>
+                </div>   
+            </div>
+             </div>
+          </div>
+       </div>
+    </section>
+    <section id="contact-section">
+       <div class="container bg-light">
+          <div class="row">
+             <div class="col-md-12">
+                <!-- Default form contact -->
+                <form class="text-center border border-light p-5" action="#!">
+
+                <p class="heading h1 mb-4">Get In Touch</p>
+
+                <!-- Name -->
+                <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
+
+                <!-- Email -->
+                <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
+
+                <!-- Subject -->
+                <label>Subject</label>
+                <select class="browser-default custom-select mb-4">
+                     <option value="" disabled>Choose option</option>
+                     <option value="1" selected>Feedback</option>
+                     <option value="2">Report a bug</option>
+                     <option value="3">Freelance job</option>
+                     <option value="4">Full-time job</option>
+                </select>
+
+                <!-- Message -->
+                <div class="form-group">
+                   <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Message"></textarea>
+                </div>
+
+               <!-- Copy -->
+                <div class="custom-control custom-checkbox mb-4">
+                   <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
+                   <label class="custom-control-label" for="defaultContactFormCopy">Send me a copy of this message</label>
+                </div>
+
+               <!-- Send button -->
+                <button class="btn btn-info btn-block" type="submit">Send</button>
+
+              </form>
+               <!-- Default form contact -->
+             </div>
+          </div>
+       </div>
+    </section>
+    <footer class="bg-dark">
+       <div class="container pt-2">
+         <div class="row">
+            <div class="col-md-12 text-center text-white">
+              <a href="https://www.facebook.com/abdu.manaf.75"> <i class="fab fa-facebook-square"></i></a>
+               <a href="https://www.instagram.com/manaaaaaaf/"> <i class="fab fa-instagram"></i></a>
+               <a href="https://www.linkedin.com/in/manaf-pm-288345197"> <i class="fab fa-linkedin"></i></a>
+               <p>Copyrights|2021</p>
+            </div>
+         </div>
+       </div>
+    </footer>
+
+  <script src="https://kit.fontawesome.com/e71c330a39.js" crossorigin="anonymous"></script>  
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ </body>
+</html>
